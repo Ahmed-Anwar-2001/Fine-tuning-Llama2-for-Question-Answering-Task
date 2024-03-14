@@ -29,18 +29,18 @@ Huggingface Hub- [link](https://huggingface.co/datasets/rajpurkar/squad_v2)
 3. Loading the dataset
 
 4. Preprocessing
-  - Perform preprocessing wherever necessary. Such as the 'answers' required preprocessing as there were gibberish data that needed to be removed.
-  - Identifying the necessary columns of data\(information) and removing the unnecessary ones like- 'id' 
-  - Creating Relevant Prompts for training.
+    - Perform preprocessing wherever necessary. Such as the 'answers' required preprocessing as there were gibberish data that needed to be removed.
+    - Identifying the necessary columns of data\(information) and removing the unnecessary ones like- 'id' 
+    - Creating Relevant Prompts for training.
 
- 5. Declaring the necessary parameters of:
+5. Declaring the necessary parameters of:
     - QLoRA parameters
     - bitsandbytes parameters
     - TrainingArguments parameters
     - SFT parameters
 
- 6. Configuring bitsandbytes for 4-bit quantization.
+6. Configuring bitsandbytes for 4-bit quantization.
 
- 7. Loading the Llama 2 model in 4-bit precision on a GPU with the corresponding tokenizer.
+7. Loading the Llama 2 model in 4-bit precision on a GPU with the corresponding tokenizer.
 
- 8. Finally, Loading configurations for QLoRA, regular training parameters, and passing everything to the SFTTrainer. The training can finally start!
+8. Finally, Loading configurations for QLoRA, regular training parameters, and passing everything to the SFTTrainer. The training can finally start!
